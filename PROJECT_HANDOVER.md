@@ -2,53 +2,42 @@
 
 ## Purpose
 
-ROC is the repository for a commercial AI training course. The broader project is **AI Engineering Mastery — Beyond Prompting**. Use this document to carry project decisions between ChatGPT, Codex, and other AI tools without relying on chat history alone.
+ROC is the repository for **AI Engineering Mastery — Beyond Prompting**, a practical, vendor-neutral AI engineering course. Use this note to carry project state between ChatGPT, Codex, and other tools.
 
-## Current status
+## Current status — 28 October 2026
 
-- GitHub repository: [movmarcos/Roc](https://github.com/movmarcos/Roc)
-- Default branch: main
-- Repository was effectively empty at handover time: its only file was a minimal README.md.
-- The GitHub connection authenticated as movmarcos and reported push access, but its contents API returned HTTP 403 for a file creation attempt.
-- The shared conversation says course starter materials had already been developed in the associated ChatGPT Project: an initial course structure, Module 1, a practical lab, and instructor materials.
-- Those source materials were not present in the shared conversation or in the repository when this handover was prepared. This handover records that gap; it does not recreate or replace the original materials.
+- Repository: [movmarcos/Roc](https://github.com/movmarcos/Roc), branch `main`.
+- The source archive `AI-Engineering-Mastery-Beyond-Prompting-starter.zip` was found in the user's Downloads folder and its draft materials were migrated into this repository.
+- The repository contains the course roadmap, Module 1 overview, two lesson drafts, two lab drafts, two instructor guide variants, an assessment rubric, reusable templates, editorial governance, commercial planning drafts, and changelogs.
+- The starter set labels itself draft v0.1. These files need technical, instructional, vendor-feature, security, and IP review before publication. Commercial and licensing terms are not finalized.
+- The GitHub Contents API returned 403 for writes; commits were completed through GitHub's repository web interface.
 
-## Agreed repository structure
+## Repository structure
 
-    Roc/
-    ├── curriculum/
-    ├── modules/
-    │   ├── 01-ai-fundamentals/
-    │   │   ├── lessons/
-    │   │   ├── labs/
-    │   │   └── assessments/
-    │   ├── 02-context-engineering/
-    │   ├── 03-claude-code/
-    │   ├── 04-codex-copilot/
-    │   └── ...
-    ├── instructor/
-    ├── commercial/
-    ├── examples/
-    └── README.md
+- `curriculum/` — roadmap and curriculum index
+- `modules/01-inside-ai-coding-assistants/` — Module 1 lessons, labs, instructor guides, and assessment
+- `templates/` — lesson, lab, and lab-results templates
+- `governance/` — editorial standard
+- `commercial/` — product brief, product strategy, release checklist
+- `docs/` — documentation changelog
 
-The structure is an initial proposal from the conversation. Keep the agreed module names and scope aligned with the source curriculum when it is available.
+## Source and organization notes
+
+The archive includes parallel alternatives: `01-context-is-not-memory.md` and `01-context-is-constructed.md`; `01-project-context-audit.md` and `01-context-persistence-experiment.md`; and both a facilitator guide and teaching guide. They are retained as draft variants. Review them together before choosing canonical materials for a pilot.
+
+The archive contained `ROADMAP.md` and `roadmap.md` with matching content. They were collapsed to one `curriculum/ROADMAP.md` to avoid a case-only filename collision on common filesystems; the curriculum index links to that file.
 
 ## Decisions captured
 
-- Keep the ChatGPT Project as a place for course architecture, content creation, and review.
-- Use GitHub as the permanent source of truth for approved course materials.
-- The intended workflow is to develop and commit course files in ROC, then review changes against the project decisions.
-- Treat the GitHub write failure as a tool/permission recovery case study. Autonomy means trying another authorised route and verifying the result, not bypassing access controls.
-- Potential case study topic: **Agent Autonomy, Tool Failures, Permission Boundaries, and Recovery Strategies**.
+- Keep the ChatGPT Project for course architecture, drafting, and review.
+- Use GitHub as the durable source of truth for approved materials.
+- Retain the source drafts faithfully; record editorial consolidation and review decisions in GitHub.
+- Do not distribute externally until licensing and commercial terms are settled.
 
 ## Next steps
 
-1. Bring the existing course structure, Module 1, practical lab, and instructor materials from the ChatGPT Project into this repository without rewriting them from memory.
-2. Reconcile the source material with the proposed directory structure.
-3. Add assessments and examples only where the source curriculum calls for them.
-4. Review links, filenames, and consistency, then record the source project and transfer date in the relevant files.
-5. Expand this handover with product positioning, learner profile, course objectives, curriculum decisions, and technical architecture from the source project.
-
-## Continuation notes
-
-The shared conversation itself does not contain the complete course files or detailed curriculum decisions. A new session should inspect the ChatGPT Project's files or receive those source files before claiming they have been migrated.
+1. Review the alternative Module 1 drafts and select the versions for a pilot.
+2. Validate technical claims and version-sensitive vendor details.
+3. Run the labs with learners and check that submitted evidence supports the assessment rubric.
+4. Complete security, accessibility, and IP review.
+5. Finalize licensing and commercial terms before external distribution.
