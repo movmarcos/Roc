@@ -1,17 +1,20 @@
 # Curriculum
 
-This directory holds the course map and curriculum-level decisions for ROC.
+The roadmap and Module 1 draft materials for **AI Engineering Mastery — Beyond Prompting** are maintained here. The course is vendor-neutral and currently at draft v0.1.
 
-The full curriculum and previously developed starter materials remain in the associated ChatGPT Project and have not yet been copied into this repository. See [Project Handover](../PROJECT_HANDOVER.md) for the current state and transfer steps.
+## Roadmap
 
-## Proposed course structure
+See [ROADMAP.md](ROADMAP.md) for the nine-module sequence, competency ladder, assessment principles, and publication gates.
 
-- modules/01-ai-fundamentals/ — lessons, labs, and assessments
-- modules/02-context-engineering/
-- modules/03-claude-code/
-- modules/04-codex-copilot/
-- instructor/ — instructor materials
-- commercial/ — product and commercial materials
-- examples/ — reusable examples
+## Module 1: Inside AI Coding Assistants
 
-This is the initial structure proposed in the project conversation. Confirm module names and scope against the original curriculum before adding or moving lesson content.
+- [Module overview](../modules/01-inside-ai-coding-assistants/README.md)
+- Lessons: context is constructed; context is not memory
+- Labs: project context audit; context persistence experiment
+- Instructor guide variants and an assessment rubric are in the module directory
+
+The two lesson and lab files are draft alternatives. Review them together before selecting a canonical path for a pilot.
+
+## Publication gates
+
+Technical review, vendor feature verification, student-run reproducibility, security and IP review, and alignment between learning outcomes and assessment are still required before publication.
