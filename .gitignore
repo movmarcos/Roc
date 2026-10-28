@@ -1,0 +1,9 @@
+# Local experiments and sensitive data
+.env
+.env.*
+!.env.example
+results/
+private/
+*.log
+.DS_Store
+__pycache__/
